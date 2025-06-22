@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Configuratore Frutta</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      display: flex;
+      height: 100vh;
+    }
+
+    .cesto {
+      width: 30%;
+      background-color: #fef3c7;
+      padding: 20px;
+      overflow-y: auto;
+      border-right: 2px solid #ddd;
+    }
+
+    .prodotti {
+      flex: 1;
+      background-color: #e0f7fa;
+      padding: 20px;
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+      gap: 20px;
+    }
+
+    .prodotto {
+      background-color: #ffffff;
+      padding: 15px;
+      border-radius: 10px;
+      text-align: center;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .prodotto button {
+      margin-top: 10px;
+      background-color: #4caf50;
+      color: white;
+      border: none;
+      padding: 8px 12px;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+
+    .prodotto button
